@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #FFFFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <VBox layoutY="68.0" prefHeight="432.0" prefWidth="306.0" style="-fx-background-color: #0F8FE4;" styleClass="sidebar" stylesheets="@../style.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="272.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="icon1">
+                     <image>
+                        <Image url="@../img/icons8-add-user-group-man-woman-64.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="buttoncadastro" mnemonicParsing="false" onAction="#toCadastro" prefHeight="50.0" prefWidth="217.0" styleClass="fbutton" text="Cadastrar Paciente" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="272.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-add-64.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="buttonmconsulta" mnemonicParsing="false" onAction="#toConsulta" text=" Marcar Consulta" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="272.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-membership-card-64%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="buttonvpaciente" mnemonicParsing="false" onAction="#toPaciente" text="Ver Paciente" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="272.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-wallet-64.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="buttonpagamento" mnemonicParsing="false" onAction="#toPagamento" text="Pagamento" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="272.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-dashboard-64.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="buttondashboard" mnemonicParsing="false" onAction="#toDashboard" text="Dashboard" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutY="-13.0" prefHeight="87.0" prefWidth="272.0">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/dente.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="backmain" mnemonicParsing="false" onAction="#toMainback" styleClass="bhome" stylesheets="@../style.css" text="Clinica Dentaria" />
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="493.0" layoutY="49.0" prefHeight="87.0" prefWidth="272.0" styleClass="sidebar-btn-text">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="icon1">
+               <image>
+                  <Image url="@../img/icons8-membership-card-64%20(1).png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="25.0" prefWidth="213.0" text="Ver Dados Paciente" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+      <Separator layoutX="306.0" layoutY="114.0" prefHeight="0.0" prefWidth="592.0" />
+      <Pane layoutX="333.0" layoutY="136.0" prefHeight="53.0" prefWidth="539.0">
+         <children>
+            <Button fx:id="PrcPaciente2" layoutX="50.0" layoutY="-11.0" mnemonicParsing="false" onAction="#listarPacientes2" prefHeight="50.0" prefWidth="224.0" styleClass="procurar" stylesheets="@../style.css" text="Procurar Paciente" textFill="WHITE" />
+            <Button fx:id="loadPaciente2" layoutX="310.0" layoutY="-11.0" mnemonicParsing="false" onAction="#showpacienteProcurado2" prefHeight="50.0" prefWidth="180.0" styleClass="procurar" stylesheets="@../style.css" text="Load Paciente" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="306.0" layoutY="253.0" prefHeight="62.0" prefWidth="154.0" styleClass="labelsspacing" stylesheets="@../style.css" text="Data Consulta" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="dataconsultaShow" layoutX="460.0" layoutY="259.0" prefHeight="50.0" prefWidth="171.0" styleClass="labelsspacing" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Pane layoutX="321.0" layoutY="206.0" prefHeight="53.0" prefWidth="539.0">
+         <children>
+            <Label layoutX="6.0" layoutY="6.0" prefHeight="40.0" prefWidth="153.0" text="Paciente" />
+            <TextField fx:id="pacienteidcomp2" editable="false" layoutX="102.0" layoutY="14.0" prefHeight="24.0" prefWidth="114.0" />
+            <TextField fx:id="pacientenomecomp2" editable="false" layoutX="242.0" layoutY="15.0" prefHeight="24.0" prefWidth="231.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="306.0" layoutY="294.0" prefHeight="205.0" prefWidth="592.0">
+         <children>
+            <GridPane gridLinesVisible="true" layoutX="6.0" layoutY="13.0" prefHeight="186.0" prefWidth="582.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.columnIndex="2" />
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.rowIndex="2" />
+                  <Label fx:id="dc2" prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="dc1" prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" GridPane.rowIndex="1" />
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" text="Data" />
+                  <Label prefHeight="50.0" prefWidth="197.0" styleClass="labelsspacing" stylesheets="@../style.css" text="Hora" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

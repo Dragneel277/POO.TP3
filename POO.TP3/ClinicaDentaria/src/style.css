@@ -1,0 +1,101 @@
+#Lbody{
+
+}
+#bgimglogin{
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:contain;
+}
+
+
+#unameicon{
+    -fx-background-image:url("img/icons8-login-64.png");
+    -fx-pref-width:38px;
+    -fx-pref-height:38px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:contain;
+}
+#iconp{
+    -fx-background-image:url("img/icons8-password-64.png");
+    -fx-pref-width:38px;
+    -fx-pref-height:38px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:contain;
+}
+
+.pmtext{
+    -fx-prompt-text-fill: white;
+}
+.sidebar{
+    -fx-background-color: #2262C6;
+    -fx-background-radius: 0px 50px 0px 0px;
+}
+
+.labbtn{
+    -fx-text-fill: #2262C6;
+    -fx-background-color: #FEFFFD;
+    -fx-background-radius: 50px;
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+}
+.sidebar-btn-text{
+    -fx-text-fill: #A2BEE8;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #7AA2E7;
+}
+
+.button {
+    -fx-background-color:  #0F8FE4;
+    -fx-text-fill: #FEFFFD;
+    -fx-border: none;
+    -fx-padding: 15px 32px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+  }
+
+  .button:hover {
+    -fx-background-color: #48DEEE;
+  }
+
+.bhome{
+    -fx-background-color: grey;
+
+}
+.bhome:hover{
+    -fx-background-color: #f0efeb;
+
+}
+
+.logout{
+    -fx-background-color: grey;
+
+}
+
+
+.procurar{
+    -fx-background-color: gainsboro;
+    -fx-text-fill: #0F8FE4;
+
+}
+
+.procurar:hover{
+    -fx-background-color: #0F8FE4;
+    -fx-text-fill: #FFFFFF;
+
+}
+.cancelarbtn{
+    -fx-background-color: gainsboro;
+    -fx-text-fill: #EF566A;
+}
+.cancelarbtn:hover{
+    -fx-background-color: #EF566A;
+    -fx-text-fill: gainsboro;
+}
+
+.labelsspacing{
+    -fx-padding:10px;
+
+}
